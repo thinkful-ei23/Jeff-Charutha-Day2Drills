@@ -1,19 +1,35 @@
 function max(numbers) {
-    let tempMax = numbers[0];
-    for (let i = 0; i < numbers.length; i++) {
-      if (numbers[i] > temptMax) {
-        temptMax = numbers[i];
-      }
+    let currentMax = numbers[0];
+    let i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] > currentMax) {
+            currentMax = numbers[i];
+        }
+        i++;
     }
+    // for (let i = 0; i < numbers.length; i++) {
+    //   if (numbers[i] > currentMax) {
+    //     currentMax = numbers[i];
+    //   }
+    // }
+    return currentMax;
   }
   
   function min(numbers) {
-    let currentMin = numbers [0];
-    for (let i=0; i < numbers.length; i++) {
-      if (numbers[i] > currentMax) {
-        currentMax = numbers[i];
-      }
+    let currentMin = numbers[0];
+    let i = 0;
+    while (i < numbers.length) {
+        if (numbers[i] < currentMin) {
+            currentMin = numbers[i];
+        }
+        i++;
     }
+    // for (let i = 0; i < numbers.length; i++) {
+    //   if (numbers[i] < currentMin) {
+    //     currentMin = numbers[i];
+    //   }
+    // }
+    return currentMin;
   }
   
   /* From here down, you are not expected to 
